@@ -1,0 +1,15 @@
+pwd:
+pwd prints the full pathname of the current working directory.
+pwd syntax:
+pwd [OPTION]...
+
+-L, --logical  : if the contents of the environment variable PWD provide an absolute name of the current directory with no "." or ".." components, then output those contents, even if they contain symbolic links. Otherwise, fall back to default -P handling.
+
+-P, --physical : Print a fully resolved name for the current directory, in which all components of the name are actual directory names, and not symbolic links).
+
+--help         : Display a help message, and exit.
+
+--version      : Display version information, and exit.
+
+eg:pwd
+/home/george
