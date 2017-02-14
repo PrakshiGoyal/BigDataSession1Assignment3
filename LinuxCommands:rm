@@ -1,0 +1,34 @@
+rm:
+remove files or directories
+
+syntax:
+rm [OPTION]... FILE...
+
+options:
+ -d, --directory
+              unlink  FILE,  even  if  it is a non-empty directory (super-user
+              only; this works only if your system
+
+              supports ‘unlink’ for nonempty directories)
+
+       -f, --force
+              ignore nonexistent files, never prompt
+
+       -i, --interactive
+              prompt before any removal
+
+       --no-preserve-root do not treat ‘/’ specially (the default)
+
+       --preserve-root
+              fail to operate recursively on ‘/’
+
+       -r, -R, --recursive
+              remove the contents of directories recursively
+
+       -v, --verbose
+              explain what is being done
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
