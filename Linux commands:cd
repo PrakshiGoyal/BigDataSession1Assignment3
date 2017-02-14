@@ -1,0 +1,10 @@
+cd:
+The cd command, which stands for "change directory", changes the shell's current working directory.
+
+syntax:
+cd documents/work/accounting
+
+options:
+cd /       To change into the root directory, making it our working directory.
+cd .       The current directory, regardless of which directory it is, is represented by a single dot (".").
+           So, running this command would change us into the directory we're already in. In other words, it would do nothing, but it would do it successfully.      
