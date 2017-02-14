@@ -1,0 +1,13 @@
+mkdir:
+Short for "make directory", mkdir is used to create directories on a file system.If the specified DIRECTORY does not already exist, mkdir creates it.More than one DIRECTORY may be specified when calling mkdir.
+
+syntax:
+mkdir [OPTION ...] DIRECTORY ...
+
+Options:
+-m, --mode=MODE	  Set file mode (as with the chmod command).
+-p, --parents	    Create parent directories as necessary. When this option is used, no error is reported if a specified DIRECTORY already exists.
+-v, --verbose	    Verbose output; print a message for each created directory.
+-Z, --context=CTX	Set the SELinux security context of each created directory to the context CTX.
+--help	          Display a help message, and exit.
+--version	        Display version information, and exit.
