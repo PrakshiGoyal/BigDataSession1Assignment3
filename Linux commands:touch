@@ -1,0 +1,18 @@
+touch:
+The touch command is the easiest way to create new, empty files. It is also used to change the timestamps (i.e., dates and times of the most recent access and modification) on existing files and directories.
+
+syntax:
+touch [option] file_name(s)
+
+Options
+-a	                      Change only the access time.
+-c, --no-create	          Do not create any files.
+-d, --date=STRING	        Parse the string STRING and use it instead of current time.
+-f	                      Ignored, but included for compatibility reasons.
+-h, --no-dereference	    Affect each symbolic link instead of any referenced file (useful only on systems that can change the timestamps of a symlink).
+-m	                      Change only the modification time.
+-r, --reference=FILE	    Use this FILE's times instead of current time.
+-t STAMP	                Use [[CC]YY]MMDDhhmm[.ss] instead of current time.
+--time=WORD	              Change the specified time: WORD is access, atime, or use; or modify (equivalent to -a WORD), or mtime (equivalent to -m).
+--help	                  Display a help message, and exit.
+--version	                Display version information, and exit.
