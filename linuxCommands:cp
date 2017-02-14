@@ -1,0 +1,42 @@
+cp:
+
+The cp command is used to make copies of files and directories.
+
+cp syntax
+
+cp [OPTION]... [-T] SOURCE DEST
+cp [OPTION]... SOURCE... DIRECTORY
+cp [OPTION]... -t DIRECTORY SOURCE...
+
+options:
+-a, --archive	    Same as -dR --preserve=ALL.
+--attributes-only	Don't copy the file data, just create a file with the same attributes.
+--backup[=CONTROL]	Make a backup of each existing destination file. CONTROL specifies the version control method to use; see below for more details.
+-b	Like --backup, but does not accept a CONTROL argument; the default control method is always used.
+--copy-contents	When operating recursively, copy contents of special files.
+-d	Same as --no-dereference --preserve=links.
+-f, --force	If an existing destination file cannot be opened, remove it and try again. This option has no effect if the -n option is used.
+-i, --interactive	Prompt before overwrite (overrides a previous -n option).
+-H	Follow command-line symbolic links in SOURCE.
+-l, --link	Create hard links to files instead of copying them.
+-L, --dereference	Always follow symbolic links in SOURCE. In other words, if SOURCE is a symlink, copy the file linked to rather than the symlink itself.
+-n, --no-clobber	Do not overwrite an existing file (overrides a previous -i option).
+-P, --no-dereference	Never follow symbolic links in SOURCE.
+-p	Same as --preserve=mode,ownership,timestamps.
+--preserve=[ATTR_LIST]	Preserve the specified attributes (default: mode,ownership,timestamps), if possible additional attributes: context, links, xattr, all.
+--no-preserve=ATTR_LIST	Don't preserve the specified attributes.
+--parents	Use full source file name under DIRECTORY.
+-R, -r, --recursive	Copy directories recursively.
+--reflink=[WHEN]	Control clone/CoW copies.
+--remove-destination	Remove each existing destination file before attempting to open it (contrast with the --force option).
+--sparse=WHEN	Control creation of sparse files.
+--strip-trailing-slashes	Remove any trailing slashes from each SOURCE argument.
+-s, --symbolic-link	Make symbolic links instead of copying.
+-S, --suffix=SUFFIX	Override the usual backup suffix.
+-t, --target-directory=DIRECTORY	Copy all SOURCE arguments into DIRECTORY
+-T, --no-target-directory	Treat DEST as a normal file
+-u, --update	Copy only when the SOURCE file is newer than the destination file or when the destination file is missing.
+-v, --verbose	Verbose mode; explain what is being done.
+-x, --one-file-system	Stay on this file system.
+--help	Display a help message and exit.
+--version	Output version information and exit.
