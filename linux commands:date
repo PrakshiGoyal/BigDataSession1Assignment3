@@ -1,0 +1,18 @@
+date:
+The date command is used to print out, or change the value of, the system's time and date information.
+
+syntax:
+date [OPTION]... [+FORMAT]
+date [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]
+
+options:
+-d, --date=STRING	      display time described by string STRING, as opposed to the default, which is 'now'
+-f, --file=DATEFILE	    like --date, but processed once for each line of file DATEFILE.
+-I[TIMESPEC], --iso-8601[=TIMESPEC]	output date/time in ISO 8601 format. For values of TIMESPEC, use 'date' for date only (the default), 'hours', 'minutes', 'seconds', or 'ns' for date and time to the indicated precision.
+-r, --reference=FILE	  display the last modification time of file FILE.
+-R, --rfc-2822	        output date and time in RFC 2822 format. Example: Mon, 07 Aug 2006 12:34:56 -0600
+--rfc-3339=TIMESPEC	    output date and time in RFC 3339 format. TIMESPEC can be set to 'date', 'seconds', or 'ns' for date and time to the indicated precision. Date and time components are separated by a single space, for example: 2006-08-07 12:34:56-06:00
+-s, --set=STRING	       set time described by string STRING.
+-u, --utc, --universal	 print or set Coordinated Universal Time.
+--help	                 Display a help message and exit.
+--version              	Display version information and exit.
