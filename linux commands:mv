@@ -1,0 +1,14 @@
+mv:
+mv renames file SOURCE to DEST, or moves the SOURCE file (or files) to DIRECTORY.
+
+syntax:
+mv [OPTION]... [-T] SOURCE DEST
+mv [OPTION]... SOURCE... DIRECTORY
+mv [OPTION]... -t DIRECTORY SOURCE...
+
+options:
+--backup[=CONTROL]	  Make a backup of each existing destination file, using the control method CONTROL. (See Backup Methods below for more about control methods.)
+-b	Like --backup,    but does not accept an argument; the default backup method is used.
+-f, --force	          Do not prompt before overwriting existing files.
+-i, --interactive	    Prompt before overwriting each existing destination file, regardless of the file's permissions. If the answer to the prompt is negative, the file is skipped.
+-n, --no-clobber	    Do not overwrite any existing file.
