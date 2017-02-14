@@ -1,0 +1,15 @@
+which:
+which returns the pathnames of the files (or links) which would be executed in the current environment, had the filename (or filenames) been given as a command (or commands) in a strictly POSIX-conformant shell. It does this by searching the paths in the PATH environment variable for executable files matching the names of the arguments.
+
+syntax:
+which -a [filename] ...
+
+options:
+-a	       Print all matching pathnames of each matching filename.
+Exit Status
+
+which returns the following value, depending on what occurred:
+
+0	       All filenames were found, and all were executable.
+1	       One or more filenames were not found, or were not executable.
+2	       An invalid option was specified.
