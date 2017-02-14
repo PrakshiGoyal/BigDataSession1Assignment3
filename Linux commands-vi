@@ -1,0 +1,22 @@
+vi:
+Originally developed by William Joy in the late 1970s, vi (pronounced "vee-eye") is a visual text editor.
+
+vi syntax:
+vi [ -| -s ] [-l] [-L] [-R] [ -r [ filename ] ] [-S] [-t tag] [-v] [-V]
+   [-x] [-w] [-n ] [-C] [+command | -c command ] filename
+   
+ Options                 Description
+ | -s	                   Suppress all interactive user feedback. This is useful when processing editor scripts.
+-l	                     Set up for editing LISP programs.
+-r	                     List the name of all files saved as the result of an editor or system crash.
+-r                       filename	Edit filename after an editor or system crash. Recovers the version of filename that was in the buffer when the crash occurred.
+-L	                     Same as -r
+-R	                     Readonly mode; the readonly flag is set, preventing accidental overwriting of the file.
+-S	                     This option is used in conjunction with the -t tag option to tell vi that the tags file may not be sorted and that, if the binary search (which relies on a sorted tags file) for tag fails to find it, the much slower linear search should also be done. Since the linear search is slow, users of large tags files should ensure that the tags files are sorted rather than use this flag. Creation of tags files normally produces sorted tags files. 
+-t                      tag	Edit the file containing the tag tag, and position the editor at its definition.
+-V	                    Verbose mode. When ex commands are read by means of standard input, the input will be echoed to standard error. This may be useful when processing ex commands within shell scripts.
+-x	                    Encryption option; when used, vi simulates the X command of ex and prompts the user for a key. This key is used to encrypt and decrypt text using the algorithm of the crypt function. The X command makes an educated guess to determine whether text read in is encrypted or not. The temporary buffer file is encrypted also, using a transformed version of the key typed in for the -x option. If an empty encryption key is entered (that is, if the return key is pressed right after the prompt), the file will not be encrypted. This is a good way to decrypt a file erroneously encrypted with a mistyped encryption key, such as a backspace or undo key.
+-wn	                    Set the default window size to n. This is useful when using the editor over a slow speed line.
+-C	                    Encryption option; same as the -x option, except that vi simulates the C command of ex. The C command is like the X command of ex, except that all text read in is assumed to have been encrypted.
++command | -c command	  Begin editing by executing the specified editor command (usually a search or positioning command).
+filename	              The file to be edited.
