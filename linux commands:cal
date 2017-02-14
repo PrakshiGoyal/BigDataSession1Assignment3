@@ -1,0 +1,21 @@
+cal:
+Display a conveniently-formatted calendar from the command line.
+
+syntax:
+cal [options] [[[day] month] year]
+
+
+Options:
+
+-1
+Display a single month. This is the default.
+-3
+Display three months: last month, this month, and next month.
+-s
+Display the calendar using Sunday as the first day of the week.
+-m
+Display Monday as the first day of the week.
+-j
+Display dates of the Julian calendar.
+-y
+Display a calendar for the entire current year.
