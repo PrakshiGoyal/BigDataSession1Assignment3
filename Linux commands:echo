@@ -1,0 +1,14 @@
+echo:
+echo displays a line of text.echo is a fundamental command found in most operating systems that offer a command line. It is frequently used in scripts, batch files, and as part of individual commands; anywhere you may need to insert text.
+Many command shells such as bash, ksh and csh implement echo as a built-in command.
+
+syntax:
+echo [SHORT-OPTION]... [STRING]...
+
+Options
+
+-n	          Do not output a trailing newline.
+-e	          Enable interpretation of backslash escape sequences (see below for a list of these).
+-E	          Disable interpretation of backslash escape sequences (this is the default).
+--help	      Display a help message and exit.
+--version	    Output version information and exit.
