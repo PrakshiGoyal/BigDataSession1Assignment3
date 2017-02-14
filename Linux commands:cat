@@ -1,0 +1,34 @@
+cat:
+cat is one of the most commonly-used commands in Linux. It can be used to:
+Display text files
+Copy text files into a new document
+Append the contents of a text file to the end of another text file, combining them.
+
+syntax:
+cat mytext.txt
+cat mytext.txt mytext2.txt
+cat mytext.txt > newfile.txt
+
+options:
+-A, --show-all
+   Equivalent to -vET.
+-b, --number-nonblank
+   Number non-empty output lines. This option overrides -n.
+-e
+   Equivalent to -vE.
+-E, --show-ends
+   Display "$" at end of each line.
+-n, --number
+   Number all output lines.
+-s, --squeeze-blank
+    Suppress repeated empty output lines.
+-t
+    Equivalent to -vT.
+-T, --show-tabs
+   Display TAB characters as ^I.
+-v, --show-nonprinting
+   Use ^ and M- notation, except for LFD and TAB.
+--help
+  Display a help message, and exit.
+--version
+  Output version information, and exit.
